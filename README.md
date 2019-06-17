@@ -38,10 +38,17 @@ In the above example, there is a cloud called "ormuco". This name will be refere
 
 1. Clone the repository
 ```
-git clone 
+$ git clone https://github.com/carrenolg/openstack-testing.git
 ```
 
-3. run docker-compose in the root directory project: 
+2. Dowload image and save it in the root directory
 ```
-$ docker-compose up -d
+$ wget http://download.cirros-cloud.net/
 ```
+
+3. Run playbook 
+
+```
+$ ansible-playbook site.yml
+```
+
