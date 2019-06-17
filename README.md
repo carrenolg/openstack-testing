@@ -43,7 +43,7 @@ $ git clone https://github.com/carrenolg/openstack-testing.git
 
 2. Dowload image and save it in the root directory
 ```
-$ wget http://download.cirros-cloud.net/
+$ wget http://download.cirros-cloud.net/0.4.0/cirros-0.4.0-x86_64-disk.img
 ```
 
 3. Put your the sshkey path in the `roles/ormuco/vars/main.yml`
