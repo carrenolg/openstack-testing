@@ -11,15 +11,34 @@ OpenStackClient looks for a file called clouds.yaml in the following locations:
 - ~/.config/openstack
 - /etc/openstack
 
-It recomend putting the clouds.yml file in the `~/.config/openstack`
+It is advisable putting the clouds.yml file in the `~/.config/openstack` location.
+
+Example:
+```
+clouds:
+  ormuco:
+    auth:
+      auth_url: https://api.example.com:5000/v3
+      username: {your_user}
+      password: {your_password}
+      tenant_id: {projectID}
+    region_name: {region}
+    identity_api_version: 3
+```
+In the above example, there is a cloud called "ormuco". This name will be reference from playbook in the `site.yml`
 
 ```
-git clone https://github.com/carrenolg/wordpress-nginx-mysql.git 
+- hosts: localhost
+  remote_user: root
+  roles:
+    - ormuco
 ```
 
-2. Download wordpress files run following command in the root directory project
+## Run the playbook
+
+1. Clone the repository
 ```
-git clone https://github.com/WordPress/WordPress.git wordpress
+git clone 
 ```
 
 3. run docker-compose in the root directory project: 
