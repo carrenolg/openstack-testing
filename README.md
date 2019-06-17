@@ -46,7 +46,7 @@ $ git clone https://github.com/carrenolg/openstack-testing.git
 $ wget http://download.cirros-cloud.net/
 ```
 
-3. Put you ssh_key path in the roles/ormuco/vars/main.yml 
+3. Put your the sshkey path in the `roles/ormuco/vars/main.yml`
 
 ```
 ---
