@@ -46,7 +46,15 @@ $ git clone https://github.com/carrenolg/openstack-testing.git
 $ wget http://download.cirros-cloud.net/
 ```
 
-3. Run playbook 
+3. Put you ssh_key path in the roles/ormuco/vars/main.yml 
+
+```
+---
+# vars file for ormuco
+path_ssh_key: "your_ssh_key_path"
+```
+
+4. Run playbook 
 
 ```
 $ ansible-playbook site.yml
