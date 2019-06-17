@@ -1,8 +1,22 @@
 ---
 # tasks file for ormuco
+- import_tasks: ssh-key.yml
+  tags: [ ormuco, ssh-key ]
 
-- import_tasks: resources-list.yml
-  tags: [ ormuco, resources-list ]
+- import_tasks: upload-image.ymls
+  tags: [ ormuco, upload-image ]
+
+- import_tasks: instance.yml
+  tags: [ ormuco, create-instance ]
+
+- import_tasks: volume.yml
+  tags: [ ormuco, create-volume ]
+
+- import_tasks: delete-instance.yml
+  tags: [ ormuco, delete-instance ]
 
 - import_tasks: new-instance.yml
   tags: [ ormuco, new-instance ]
+
+- import_tasks: resources-list.yml
+  tags: [ ormuco, resources-list ]
