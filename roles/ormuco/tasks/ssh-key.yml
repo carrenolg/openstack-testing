@@ -1,0 +1,6 @@
+- name: add ssh-key to openstack
+  os_keypair:
+    cloud: ormuco
+    state: present
+    name: SuperKey
+    public_key_file: "{{ path_ssh_key }}"

@@ -1,0 +1,9 @@
+- name: Show imagen SuperUbuntu
+  os_image_facts:
+    cloud: ormuco
+    image: SuperUbuntu
+
+- name: Show servers 
+  os_server_facts:
+    cloud: ormuco
+    server: Ser*

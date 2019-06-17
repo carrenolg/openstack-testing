@@ -1,0 +1,13 @@
+- name: Create server 03
+  os_server:
+    cloud: ormuco
+    state: present
+    name: ServerC
+    image: SuperUbuntu
+    key_name: SuperKey
+    timeout: 200
+    flavor: 102
+    network: default-network
+    auto_ip: yes
+    security_groups:
+      - default

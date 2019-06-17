@@ -1,0 +1,4 @@
+- name: remove an instance
+  os_server:
+    name: ServerB
+    state: absent

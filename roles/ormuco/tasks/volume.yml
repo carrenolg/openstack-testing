@@ -1,0 +1,14 @@
+- name: create 5g volume
+  os_volume:
+    state: present
+    cloud: ormuco
+    size: 5
+    display_name: SuperVolumen
+
+- name: attach volume to host
+  os_server_volume:
+    state: present
+    cloud: ormuco
+    server: ServerA
+    volume: SuperVolumen
+    device: /dev/vdb

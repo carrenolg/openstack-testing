@@ -1,0 +1,27 @@
+- name: Create server 01
+  os_server:
+    cloud: ormuco
+    state: present
+    name: ServerA
+    image: SuperUbuntu
+    key_name: SuperKey
+    timeout: 200
+    flavor: 102
+    network: default-network
+    auto_ip: yes
+    security_groups:
+      - default
+
+- name: Create server 02
+  os_server:
+    cloud: ormuco
+    state: present
+    name: ServerB
+    image: SuperUbuntu
+    key_name: SuperKey
+    timeout: 200
+    flavor: 102
+    network: default-network
+    auto_ip: yes
+    security_groups:
+      - default

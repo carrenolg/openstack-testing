@@ -1,0 +1,8 @@
+---
+# tasks file for ormuco
+
+- import_tasks: resources-list.yml
+  tags: [ ormuco, resources-list ]
+
+- import_tasks: new-instance.yml
+  tags: [ ormuco, new-instance ]

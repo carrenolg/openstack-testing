@@ -1,0 +1,8 @@
+- name: upload image ubuntu
+  os_image:
+    cloud: ormuco
+    name: SuperUbuntu
+    container_format: bare
+    disk_format: qcow2
+    state: present
+    filename: xenial-server-cloudimg-amd64.qcow2
